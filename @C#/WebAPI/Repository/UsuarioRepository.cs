@@ -48,8 +48,7 @@ namespace WebAPI.Repository
         public async Task<bool> SaveChangesAsync()
         {
             /* O METODO RETORNA 0 OU 1 
-            SE FOR SIM SALVA = TRUE(1)
-            SE NÃO SALVAR = FALSE(0)*/
+            SE TIVER SALVO ALGO RETORNA 1 == TRUE*/
             return await _context.SaveChangesAsync() > 0;
         }
     }
